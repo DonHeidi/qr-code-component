@@ -11,23 +11,57 @@
     --font-weight-700: 700;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+}
+
 body {
     font-family: var(--font-outfit);
     font-size: var(--font-size);
     background-color: var(--light-gray);
+    height: 100%;
+}
+
+.wrapper {
+    height: 100vh;
+    display: grid;
+    place-content: center;
 }
 
 .card {
+    max-width: 20rem;
     background-color: var(--white);
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    border-radius: 20px;
+    padding: 16px;
+}
+
+.card img {
+    border-radius: 10px;
+    
 }
 
 .card h2 {
     font-weight: var(--font-weight-700);
     color: var(--dark-blue);
+    margin-top: 8px;
+    height: 56px;
 }
 
 .card p {
     font-weight: var(--font-weight-400);
+    margin-bottom: 24px;
+    margin-inline: 16px;
+    color: var(--grayish-blue);
+    height: 57px;
+    letter-spacing: 0.19px;
 }
 
 @media only screen and (max-width: 375px) {
